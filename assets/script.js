@@ -1,4 +1,5 @@
-const addEmployeesBtn = document.querySelector('#add-employees-btn'); //employesss
+const addEmployeesBtn = document.querySelector('#add-employees-btn'); 
+//I started by fixing a bugg here i changed add-employesss-bt to employees
 
 
 // Collect Employess data
@@ -9,8 +10,10 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn'); //employes
 
   while (addingEmployees) {
 
+// I used prompt Method here to display a dialog message,
+// and bellow the instrings and function.
   let firstName = prompt("Enter First Name");
-  let lastName = prompt("Enter Last Name");
+  let lastName = prompt("Enter Last Name");  
   let salaryInput = prompt("Enter Salary");
 
   if (isNaN(parseInt(salaryInput))) {
@@ -36,13 +39,12 @@ return employees;
 
 }
 
-// const newemployees = collectEmployees();
-// console.log(newemployees,"This is what been returned from the first function");
 
 
 // Display the average salary
 const displayAverageSalary = function(employees) {
-  // TODO: Calculate and display the average salary
+  // I used let as variable declaration, as the value of the variable may change over time. 
+
   let Salary = 0;
 
     employees.forEach(employees => {
@@ -55,7 +57,8 @@ const displayAverageSalary = function(employees) {
 };
 
 
-// Select a random Employess //   // TODO: Select and display a random Employess
+// Select a random Employess //   
+// I used Math method here to  display a random Employess
 const  getRandomEmployee= function(employees) {
 
   return Math.floor(Math.random() * employees);
